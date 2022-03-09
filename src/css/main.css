@@ -4,6 +4,8 @@ img,
 video {
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .attribution {
@@ -12,4 +14,42 @@ video {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card {
+  border-radius: 2rem;
+  max-width: 350px;
+  max-height: 375px;
+  background-color: aliceblue;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  max-width: 350px;
+  max-height: 140px;
+  position: relative;
+}
+
+.profilephoto {
+  max-width: 95px;
+  max-height: 95px;
+  border-radius: 10rem;
+  position: absolute;
+  border: 3px solid white;
+}
+
+#nameage {
+  text-align: center;
+}
+
+#stats {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
