@@ -15,22 +15,34 @@
     <script src="./js/main.js" defer></script>
     <title>Frontend Mentor | Profile card component</title>
   </head>
-  
+
   <body>
-    <article class="card"></article>
-      <img class="banner" src="./images/bg-pattern-card.svg" alt="pattern of equally sized and symmetrically arranged circles">
-      <img class="profile photo" src="./images/image-victor.jpg" alt="Portrait of Victor">
-      <ul>
-        <h1>Victor Crest</h1>
-        <h2>26</h2>
-      </ul>
-      <h3>London</h3>
-      <ul>
-        <h1>80K</h1>
+    <article class="card">
+      <section id="proimages">
+        <img
+          class="banner"
+          src="./images/bg-pattern-card.svg"
+          alt="pattern of equally sized and symmetrically arranged circles"
+        />
+        <img
+          class="profilephoto"
+          src="./images/image-victor.jpg"
+          alt="Portrait of Victor"
+        />
+      </section>
+      <section>
+        <ul id="nameage">
+          <h1>Victor Crest</h1>
+          <h3>26</h3>
+        </ul>
+        <h4>London</h4>
+      </section>
+      <ul id="stats">
+        <h2>80K</h2>
         <p>Followers</p>
-        <h1>803K</h1>
+        <h2>803K</h2>
         <p>Likes</p>
-        <h1>1.4K</h1>
+        <h2>1.4K</h2>
         <p>Photos</p>
       </ul>
     </article>
