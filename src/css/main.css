@@ -1,3 +1,7 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+}
+
 /* Decent Defaults */
 
 img,
@@ -8,10 +12,22 @@ video {
   margin-right: auto;
 }
 
+html {
+  --bubble-size: 100vh;
+  --bubble-x-offset: calc(var(--bubble-size) * -0.25);
+  --bubble-y-offset: calc(var(--bubble-size) * -0.5);
+  background-image: url("./../images/bg-pattern-top.svg"),
+    url("./../images/bg-pattern-bottom.svg");
+  background-position: top var(--bubble-y-offset) left var(--bubble-x-offset),
+    bottom var(--bubble-y-offset) right var(--bubble-x-offset);
+  background-repeat: no-repeat;
+  background-size: var(--bubble-size);
+  background-color: var(--dark-cyan);
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -19,7 +35,6 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
 #content {
   display: flex;
   align-items: center;
@@ -33,36 +48,30 @@ body {
   background-color: white;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.16);
 }
-
 .fancy-overlay {
   position: relative;
   margin-bottom: 3.5rem;
 }
-
 .banner {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   max-width: 350px;
   max-height: 140px;
 }
-
 .nameage {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 ul {
   display: flex;
   flex-flow: column wrap;
   list-style: none;
 }
-
 hr {
   color: hsl(227, 10%, 46%);
   border-width: 0.1px;
 }
-
 .stats {
   direction: flex;
   flex-flow: column wrap;
@@ -74,7 +83,6 @@ hr {
   justify-content: flex-end;
   align-items: center;
 }
-
 .profilephoto {
   display: block;
   max-width: 105px;
@@ -86,20 +94,17 @@ hr {
   left: 0;
   right: 0;
 }
-
 h1 {
   font-weight: 700;
   font-size: 18px;
   color: hsl(229, 23%, 23%);
   padding-top: 1rem;
 }
-
 .numbers {
   font-weight: 700;
   font-size: 18px;
   color: hsl(229, 23%, 23%);
 }
-
 #age {
   font-weight: 400;
   color: hsl(227, 10%, 46%);
@@ -111,7 +116,6 @@ h2 {
   color: hsl(227, 10%, 46%);
   padding-bottom: 0.5rem;
 }
-
 .descriptor {
   font-weight: 400;
   font-size: 14px;
