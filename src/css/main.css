@@ -8,6 +8,10 @@ video {
   margin-right: auto;
 }
 
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -16,14 +20,23 @@ video {
   color: hsl(228, 45%, 44%);
 }
 
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 .card {
   border-radius: 2rem;
   max-width: 350px;
-  max-height: 375px;
-  background-color: aliceblue;
-  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
-  flex-direction: column;
-  align-items: center;
+  height: 375px;
+  background-color: white;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.16);
+}
+
+.fancy-overlay {
+  position: relative;
+  margin-bottom: 3.5rem;
 }
 
 .banner {
@@ -31,25 +44,76 @@ video {
   border-top-right-radius: 2rem;
   max-width: 350px;
   max-height: 140px;
-  position: relative;
+}
+
+.nameage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+}
+
+hr {
+  color: hsl(227, 10%, 46%);
+  border-width: 0.1px;
+}
+
+.stats {
+  direction: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  column-count: 3;
+  column-fill: balance;
+  height: 4rem;
+  width: fill;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .profilephoto {
-  max-width: 95px;
-  max-height: 95px;
+  display: block;
+  max-width: 105px;
+  max-height: 105px;
   border-radius: 10rem;
+  border: 5px solid white;
   position: absolute;
-  border: 3px solid white;
+  bottom: -3.5rem;
+  left: 0;
+  right: 0;
 }
 
-#nameage {
-  text-align: center;
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  padding-top: 1rem;
 }
 
-#stats {
-  text-align: center;
+.numbers {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
 }
 
-h4 {
+#age {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+h2 {
   text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(227, 10%, 46%);
+  padding-bottom: 0.5rem;
+}
+
+.descriptor {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
 }
