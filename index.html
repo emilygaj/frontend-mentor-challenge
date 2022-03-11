@@ -14,38 +14,48 @@
     />
     <script src="./js/main.js" defer></script>
     <title>Frontend Mentor | Profile card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <article class="card">
-      <section id="proimages">
-        <img
-          class="banner"
-          src="./images/bg-pattern-card.svg"
-          alt="pattern of equally sized and symmetrically arranged circles"
-        />
-        <img
-          class="profilephoto"
-          src="./images/image-victor.jpg"
-          alt="Portrait of Victor"
-        />
-      </section>
-      <section>
-        <ul id="nameage">
-          <h1>Victor Crest</h1>
-          <h3>26</h3>
+    <div id="content">
+      <article class="card">
+        <section id="proimages">
+          <div class="fancy-overlay">
+            <img
+              class="banner"
+              src="./images/bg-pattern-card.svg"
+              alt="pattern of equally sized and symmetrically arranged circles"
+            />
+            <img
+              class="profilephoto"
+              src="./images/image-victor.jpg"
+              alt="Portrait of Victor"
+            />
+          </div>
+        </section>
+        <div class="nameage">
+          <h1>Victor Crest <span id="age">26</span></h1>
+        </div>
+        <div>
+          <h2>London</h2>
+        </div>
+        <hr />
+        <ul class="stats">
+          <li class="numbers">80K</li>
+          <li class="descriptor">Followers</li>
+          <li class="numbers">803K</li>
+          <li class="descriptor">Likes</li>
+          <li class="numbers">1.4K</li>
+          <li class="descriptor">Photos</li>
         </ul>
-        <h4>London</h4>
-      </section>
-      <ul id="stats">
-        <h2>80K</h2>
-        <p>Followers</p>
-        <h2>803K</h2>
-        <p>Likes</p>
-        <h2>1.4K</h2>
-        <p>Photos</p>
-      </ul>
-    </article>
+      </article>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
